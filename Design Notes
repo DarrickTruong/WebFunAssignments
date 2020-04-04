@@ -1,0 +1,106 @@
+Beautiful Typography
++ Main Body text
+    - Use font size between 15-22px
+    - depending on the typeface
++ Headlines
+    - Use really big font sizes
+    - can be 30-90px+ 
+    - Decrease font weight with larger fonts
++ Line Spacing
+    - use 120-150% of font size
++ Characters per Line
+    - 45-90 Characters per Line
++ Choose good looking fonts
+    - Sans-serif
+        - more neutral
+        - clean, simple
+        - modern websites
+        - Open Sans, Lato, Raleway, Monsterrat, PT Sans
+    - serif
+        - traditional purposes
+        - story telling
+        - long reading
+    - Use Google fonts
++ How to choose a font?
+    - choose a font which reflects the look and feel you want for your websites
+    - decide sans-serif or serif typeface
+    - use a good font
+    - use only that one typeface
+    - can mix between serif and sans-serif for headings vs. body text for visual effect
+
+
+Colors - Use colors like a pro
++ Use a single base color for website design
+    - one base color that is not white, black, or grey
+    - greys, and whites can be used for accents or complement
+    - Never use black in your design. can use dark grey etc. 
++ Colors can cause psychological effects
+    -Picking a color for a website means more then picking your favorite color and turning it into a design. It means picking the right color in order to get the desired response from your audience. Color really makes a difference. This happens because there are psychological effects behind each color
+        - red - passion, power, strength, excitement, energetic, alert
+        - orange - cheerfulness, friendliness, courage, creativity, confidence
+        - yellow - happiness, curiousity, brightness, friendliness, intelligence
+        - green - nature, life, health, money, balance, harmonizing
+        - blue - stability, professionalism, honor, trust, patience, peace
+        - purple - power, nobility, wealth, wisdom, luxury, royalty, mystery
+        - pink - romance, care, love, peace, affection
+        - brown - relaxation, confidence, earthiness, reliability, nature, comfort
+    - learn more about color theory
++ Flat UI colors (flatuicolors.com)
+    - color palettes
+
+
+Working with Images
++ Using large background images can make the website look more attractive and encourage website engagement
++ Put text directly over images
+    - Dark image and light text
+    - overlay the image with a color
+        - shade of black
+        - color gradients
+        - color shades
+        - choose color wisely/carefully (see above)
+    - put text in a box 
+        - opaque box, should be able to see the picture beneath it
+    - use image blur or an out of focus area for the text
+        - make sure the text stays on the blurred area of photo in responsive design
+        - use "floor fade"
+
+
+Working with Icons
++ Can make your website pop out!
++ Use icons to help user quickly browse the website
+    - Can show features, products, steps to follow, or links
++ Icons should be very clear and use labels when possible
++ Icons should only be complement/supplement/support role for website
++ Use icon fonts/ vector images
+
+
+Spacing, Layout, Whitespace
++ Use Whitespace
+    - Between elements
+    - Between groups of elements
+    - Between website's sections
+    - Don't exagerate
++ Whitespace described invisible relationships between the elements of your website
+    - helps determine the heirarchy of the website
++ Define heirarchy
+    - define where you want the audience to look first
+    - establish a flow that corresponds to your content's message
+    - use whitespace to build that flow
+
+
+User Experience
++ User interface is the presentation of the product, how it looks and feel
++ User experience is the overall experience the user has with a product
+    "It's not just what it looks like and feels like. Design is how it works." - Steve Jobs
+    - User experience is the balance between user's goals and business goals
+
+
+Getting Inspired
++ Collect designs that you like
++ Try to understand everything about them
++ Why do they look good?
++ What do these sites have in common?
++ How were they build in HTML and CSS
++ Steal like an artist
+    - At first, Don't worry about being original
+    - Mimic and copy 
