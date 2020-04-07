@@ -1,0 +1,239 @@
+/* ------------------------ */
+/* Basic setup */
+/* ------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #ffffff;
+    color: #555555;
+    font-family: "Lato", "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* ------------------------ */
+/* Reuseable Components */
+/* ------------------------ */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto; 
+}
+
+
+h1, 
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    margin: 0;
+    color: #fff;
+    /* make text size relative for responsive design. based on "html font-size */
+    font-size: 200%;
+    word-spacing: 4px;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 150%;
+    word-spacing: 2px;
+    text-align: center;
+}
+
+h2::after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+section {
+    padding: 80px 0;
+}
+
+/* Paragraphs */
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin: 0 0 30px 15%;
+}
+
+.box {
+    padding: 1%;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+
+/* ------------------------ */
+/* Buttons */
+/* ------------------------ */
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    transition: background-color 0.3s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    margin-right: 15px;
+    background-color: #e67e22;
+    border-radius: 50px;
+    border: 1px solid #e67e22;
+    color: #fff;
+    
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #e67e22;
+    border-radius: 50px;
+    color: #e67e22;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #cf6d17;
+    border: 1px solid #cf6d17;
+    color: #fff;
+}
+
+
+
+/* ------------------------ */
+/* Headings */
+/* ------------------------ */
+
+header {
+    /* background image and adding a dark tint for text */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.699)), url(./images/hero.jpg);
+    background-size: cover;
+    background-position: center; 
+    height: 100vh;
+}
+
+/* Centering Text-box inside a div background picture */
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text-box a {
+    margin-top: 20px;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 50px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link, 
+.main-nav li a:visited {
+    padding: 8px 8px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    transition: border 0.3s;
+}
+
+.main-nav li a:hover, 
+.main-nav li a:active {
+    border: 2px solid #e67e22
+}
+
+.icon-lg {
+    display: block;
+    height: 50px;
+    width: auto;
+    margin-bottom: 15px;
+}
+
+/* Changing color of SVG icon. Used Codepen*/
+.filter-orange {
+    filter: invert(60%) sepia(76%) saturate(2451%) hue-rotate(349deg) brightness(96%) contrast(88%);
+}
+
+
+/* ------------------------ */
+/* Meals */
+/* ------------------------ */
+.section-meals {
+    padding: 0;
+}
+
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    /* dark background to make img darker */
+    background-color: #000;
+}
+
+.meal-photo img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+    /* opacity to make img darker */
+    opacity: 0.7;
+}
+
+.meal-photo img:hover {
+    transform: scale(1.03);
+    opacity: 1;
+}
