@@ -131,7 +131,8 @@ a:hover {
 /* ------------------------ */
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -140,7 +141,8 @@ a:hover {
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit] {
     margin-right: 15px;
     background-color: #e67e22;
     border-radius: 50px;
@@ -157,7 +159,9 @@ a:hover {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
     background-color: #cf6d17;
     border: 1px solid #cf6d17;
     color: #fff;
@@ -418,8 +422,7 @@ blockquote:before {
 
 .plan-box {
     background-color: #fff;
-    padding: 3%;
-    box-shadow: 3px 3px rgb(214, 214, 214);
+    box-shadow: 0 2px 2px rgb(226, 225, 225);
     width: 90%;
     border-radius: 5px;
     margin-left: 5%;
@@ -428,6 +431,15 @@ blockquote:before {
 .plan-box div {
     border-bottom:1px solid rgb(240, 240, 240);
     padding: 15px;
+}
+
+.plan-box div:first-child {
+    background-color: rgb(250, 246, 246);
+}
+
+.plan-box div:last-child {
+    text-align: center;
+    border: none;
 }
 
 .plan-price { 
@@ -452,18 +464,14 @@ blockquote:before {
     font-size: 90%;
 }
 
-.plan-box button {
-    width: 50%;
-    display: block;
-    margin: 15px auto;
-    border-radius: 16px;
-    padding: 2%;
-    background-color: #e67e22;
-    color: white;
-    font-size: 90%;
-    font-weight: 300;
-    transition: background-color 0.2s;
-}
+
+/* .plan-box a {
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+    margin-top: 10px;
+} */
+
 
 .section-price button:hover {
     background-color: #cf6d17;
@@ -484,3 +492,87 @@ blockquote:before {
     margin: 0 auto;
     margin-top: 30px;
 } */
+
+
+/* ------------------------ */
+/* Form */
+/* ------------------------ */
+
+.section-form {
+    width:50%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #c7c6c6
+}
+
+textarea {
+    height:100px;
+}
+
+#news {
+    margin-right: 10px;
+}
+
+select {
+    font-weight: 300;
+}
+
+*:focus {
+    outline:none;
+}
+
+/* ------------------------ */
+/* Footer */
+/* ------------------------ */
+footer {
+    background-color: #333;
+    padding: 50px;
+}
+
+footer p {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.footer-nav {
+    list-style:none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin:0;
+}
+
+.footer-nav a:link,
+.footer-nav a:visited,
+.social-links a:link,
+.social-links a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #8b8a8a;
+    transition: color .2s;
+}
+
+.footer-nav a:hover {
+    color: rgb(224, 223, 223)
+}
