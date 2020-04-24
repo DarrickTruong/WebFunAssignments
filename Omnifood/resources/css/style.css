@@ -534,7 +534,8 @@ select {
 /* ------------------------ */
 footer {
     background-color: #333;
-    padding: 50px;
+    padding: 30px;
+    font-size: 80%;
 }
 
 footer p {
@@ -551,6 +552,14 @@ footer p {
     list-style: none;
     float: right;
 }
+/* 
+#foot-nav {
+    position: relative;
+}
+.footer-nav {
+    position: absolute;
+    top: 35px;
+} */
 
 .footer-nav li,
 .social-links li {
@@ -575,4 +584,34 @@ footer p {
 
 .footer-nav a:hover {
     color: rgb(224, 223, 223)
+}
+
+.social-links img {
+    vertical-align: top;
+}
+
+.facebook,
+.twitter,
+.google,
+.instagram {
+    height: 25px;
+    width: auto;
+    filter: invert(56%) sepia(3%) saturate(10%) hue-rotate(314deg) brightness(97%) contrast(93%);
+    transition: filter .2s;
+}
+
+.facebook:hover{
+    filter: invert(32%) sepia(15%) saturate(2142%) hue-rotate(183deg) brightness(97%) contrast(90%);
+}
+
+.twitter:hover{
+    filter: invert(68%) sepia(97%) saturate(2202%) hue-rotate(179deg) brightness(96%) contrast(94%);
+}
+
+.google:hover {
+    filter: invert(33%) sepia(87%) saturate(2816%) hue-rotate(346deg) brightness(96%) contrast(79%);
+}
+
+.instagram:hover {
+    filter: invert(25%) sepia(87%) saturate(1782%) hue-rotate(294deg) brightness(87%) contrast(95%);
 }
