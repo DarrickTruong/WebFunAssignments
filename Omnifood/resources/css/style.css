@@ -229,7 +229,7 @@ header {
 
 .main-nav li a:link, 
 .main-nav li a:visited {
-    padding: 8px 8px;
+    padding: 8px;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
@@ -254,10 +254,6 @@ header {
 /* Sticky-Nav */
 /* ------------------------ */
 
-.main-nav {
-    margin-top: 15px;
-}
-
 .sticky {
     position: fixed;
     top: 0;
@@ -265,13 +261,17 @@ header {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.979);
     box-shadow: 0 2px 2px #b3b1b1;
+    z-index: 1;
+}
+
+.sticky .main-nav {
+    margin-top: 15px;
 }
 
 .sticky .main-nav li a:link, 
 .sticky .main-nav li a:visited {
-    padding: 8px 8px;
+    padding: 8px;
     color: #555555;
-    border-bottom: 0;
 }
 
 .sticky .logo-black {
