@@ -8,6 +8,7 @@
     <!-- CSS Reset -->
     <link rel="stylesheet" href="./vendors/css/normalize.css">
     <link rel="stylesheet" href="./vendors/css/grid.css">
+    <link rel="stylesheet" href="./vendors/css/animate.css">
     <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
     <link rel="stylesheet" href="./resources/css/media-queries.css" type="text/css">
     <link
@@ -24,25 +25,27 @@
                 <img src="./resources/images/logo.png" alt="Omnifood logo"
                     class="logo-black">
 
-                <ul class="main-nav">
-                    <li><a href="#">Food Delivery</a></li>
-                    <li><a href="#">How It Works</a></li>
-                    <li><a href="#">Our Cities</a></li>
+                <ul class="main-nav js--main-nav ">
+                    <li><a href="#features">Food Delivery</a></li>
+                    <li><a href="#works">How It Works</a></li>
+                    <li><a href="#cities">Our Cities</a></li>
                     <li><a href="#">Sign Up</a></li>
                 </ul>
+                <a class="mobile-nav-icon js--nav-icon"><img src="./vendors/css/ionicons-5.0.0.designerpack/menu-outline.svg" data-alt-src="./vendors/css/ionicons-5.0.0.designerpack/close-outline.svg" alt="menu" class="icon-lg"></a>
+
             </div>
         </nav>
 
         <div class="hero-text-box">
             <h1>Goodbye junk food.</h1>
             <h1>hello super healthy meals.</h1>
-            <a class="btn btn-full" href="#">I’m hungry</a>
-            <a class="btn btn-ghost" href="#">Show me more</a>
+            <a class="btn btn-full js--scroll-price" href="#">I’m hungry</a>
+            <a class="btn btn-ghost js--scroll-features" href="#">Show me more</a>
         </div>
 
     </header>
 
-    <section class="section-features js--section-features">
+    <section class="section-features js--section-features" id="features">
         <div class="row">
             <h2>Get food fast &mdash; not fast food</h2>
             <p class="long-copy">
@@ -52,7 +55,7 @@
             </p>
         </div>
 
-        <div class="row">
+        <div class="row js--wp-1">
             <div class="col span-1-of-4 box">
                 <img class="icon-lg filter-orange"
                     src="./vendors/css/ionicons-5.0.0.designerpack/infinite-outline.svg"
@@ -157,14 +160,14 @@
         </ul>
     </section>
 
-    <section class="section-steps">
+    <section class="section-steps" id="works">
         <div class="row">
             <h2>How it works &mdash; Simple as 1, 2, 3</h2>
         </div>
         <div class="row">
             <div class="col span-1-of-2 steps-box">
                 <img src="./resources/images/app-iPhone.png"
-                    alt="Omnifood app on iphone" class="app-screen">
+                    alt="Omnifood app on iphone" class="app-screen js--wp-2">
             </div>
             <div class="col span-1-of-2 steps-box">
                 <div class="works-step">
@@ -193,8 +196,8 @@
         </div>
     </section>
 
-    <section class="section-cities">
-        <div class="row">
+    <section class="section-cities" id="cities">
+        <div class="row js--wp-3">
             <h2>We're currently in these cities</h2>
         </div>
         <div class="row">
@@ -321,13 +324,13 @@
         </div>
     </section>
 
-    <section class="section-price">
+    <section class="section-price js--section-price">
         <div class="row">
             <h2> Start eating healthy today </h2>
         </div>
         <div class="row">
             <div class="col span-1-of-3">
-                <div class="plan-box">
+                <div class="plan-box js--wp-4">
                     <div>
                         <h3>Premium</h3>
                         <p class="plan-price">$399 <span>/ month</span></p>

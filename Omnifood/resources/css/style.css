@@ -24,11 +24,12 @@ html {
 
 .row {
     max-width: 1140px;
+    height:auto;
     margin: 0 auto; 
 }
 
 
-h1, 
+h1,
 h2,
 h3 {
     font-weight: 300;
@@ -212,6 +213,8 @@ header {
 }
 
 
+
+
 /* ------------------------ */
 /* Main-Nav */
 /* ------------------------ */
@@ -282,7 +285,27 @@ header {
     display: none;
 }
 
+/* ------------------------ */
+/* Mobile-NAV */
+/* ------------------------ */
+.mobile-nav-icon {
+    float: right;
+    cursor: pointer; 
+    margin-top: 15px;
+    display: none;
+}
 
+.close-nav-icon {
+    float: right;
+    cursor: pointer; 
+    margin-top: 15px;
+    /* display: none; */
+}
+
+.mobile-nav-icon img,
+.close-nav-icon img {
+    filter: invert(100%) sepia(0%) saturate(5744%) hue-rotate(135deg) brightness(117%) contrast(101%);
+}
 
 /* ------------------------ */
 /* Features */
@@ -670,3 +693,24 @@ footer p {
     -webkit-filter: invert(25%) sepia(87%) saturate(1782%) hue-rotate(294deg) brightness(87%) contrast(95%);
             filter: invert(25%) sepia(87%) saturate(1782%) hue-rotate(294deg) brightness(87%) contrast(95%);
 }
+
+
+/* ------------------------ */
+/* Animations */
+/* ------------------------ */
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+.js--wp-4 {
+    animation-duration: 1s;
+}
+.js--wp-1.animated, 
+.js--wp-2.animated, 
+.js--wp-3.animated {
+    opacity:1;
+}
+

@@ -123,8 +123,50 @@
         font-size: 16px;
     }
 
+
+    .logo {
+        height: 50px;
+    }
+
     .main-nav {
+        float:left;
+        margin: 10px 0 0 10px;
         display: none;
+    }
+
+    .main-nav li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .main-nav a {
+        border:0;
+    }
+
+    .sticky .logo-black {
+        margin-top: 15px;
+    }
+
+    .sticky .main-nav {
+        margin-top: 10px;
+    }
+
+    .sticky .main-nav li a:link, 
+    .sticky .main-nav li a:visited {
+        padding: 10px 0 0 ;
+        color: #555555;
+        border:0;
+    }
+
+    .mobile-nav-icon {
+        display: inline-block;
+    }
+
+    .sticky .mobile-nav-icon img {
+        filter: none;
+    }
+    .sticky .close-nav-icon img {
+        filter: none;
     }
 
     h1 {
@@ -150,7 +192,6 @@
     .works-step {
         margin-bottom: 30px;
     }
-
 
     .long-copy {
         width: 90%;
