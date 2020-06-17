@@ -1,8 +1,11 @@
 /* big tablets to 1200px (widths smaller than the 1140px row */
 @media only screen and (max-width: 1350px) {
     .hero-text-box {
-        width: 100%;
+        width: 50%;
         padding: 5%;
+        position: absolute;
+        top: 50%;
+        left: 30%;
     }
 
     .row {
@@ -14,6 +17,13 @@
 @media only screen and (max-width: 1023px) {
     body {
         font-size: 18px;
+    }
+
+    .hero-text-box {
+        padding: 5%;
+        position: absolute;
+        top: 45%;
+        left: 50%;
     }
 
     section {
@@ -33,96 +43,19 @@
         margin-left: 10%
     }
 
-
-    .steps-box {
-        margin-top: 10px;
+    .rsvp-box:first-child p {
+        margin-left: 10%;
+        width: 70%;
     }
 
-
-    .steps-box:last-child {
-        margin-top: 10px;
-    }
-
-    .works-step {
-        margin-bottom: 50px;
-    }
-
-    .works-step div {
-        font-size: 100%;
-        color: #e67e22;
-        border: 2px solid #e67e22;
-        border-radius: 50%;
-        height: 35px;
-        width: 35px;
-        text-align: bottom;
-        padding: 5px;
-        float: left;
-        margin-right: 20px;
-    }
-
-    .app-screen {
-        width: 40%;
-    }
-
-    .icon-sm {
-        width: 15px;
-        margin-right: 5px;
-    }
-
-    .city-feature {
-        font-size: 90%;
-    }
-
-    .plan-box {
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .plan-price {
-        font-size: 200%;
-    }
-
-    .plan-box li {
-        font-size: 80%;
-    }
-
-    .section-testimonials img {
-        width: 18%;
-    }
-
-    .section-form {
-        width: 100%;
-    }
-
-    #foot-nav {
-        width: 50%;
-        margin: 0;
-    }
-
-    .footer-nav li,
-    .social-links li {
-        display: block;
-    }
-
-    footer div.col:last-child {
-        width: 50%;
-        margin: 0;
-    }
-
-    .facebook,
-    .twitter,
-    .google,
-    .instagram {
-        width: 20px;
-    }
 }
+
 
 /* small phones to small tablets 481-767px */
 @media only screen and (max-width: 767px) {
     body {
         font-size: 16px;
     }
-
 
     .logo {
         height: 50px;
@@ -181,25 +114,9 @@
         width: 100%;
     }
 
-    .plan-box {
-        margin-bottom: 10px;
-    }
-
-    .steps-box:first-child {
-        text-align: center;
-    }
-
-    .works-step {
-        margin-bottom: 30px;
-    }
-
     .long-copy {
         width: 90%;
         margin-left: 5%;
-    }
-
-    .meals-showcase li {
-        width: 50%;
     }
 
     input,
@@ -208,4 +125,19 @@
     }
 }
 
-@media only screen and (max-width:500px) {}
+@media only screen and (max-width:500px) {
+    .section-rsvp {
+        height: 100vh;
+    }
+    .rsvp-box {
+        margin-bottom: 35px;
+    }
+
+    .rsvp-box:last-child {
+        margin-bottom: 0;
+    }
+    
+    .section-rsvp .col .span-1-of-3 {
+        text-align: left;
+    }
+}

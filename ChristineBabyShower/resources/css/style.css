@@ -177,7 +177,7 @@ input[type=submit]:active {
 
 header {
     /* background image and adding a dark tint for text */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.699)), url(./images/hero-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.699)), url(./images/hero.jpg);
     background-size: cover;
     background-position: right; 
     height: 100vh;
@@ -387,224 +387,81 @@ nav p {
     background-color: rgb(240, 240, 240);
 }
 
-.rsvp-box:first-child {
-    text-align: right;
-    padding: 3%;
-}
-
-.rsvp-box:last-child {
-    padding-left: 3%;
-    margin-top: 70px;
-
-}
-
-.couple {
+.section-rsvp p{
     width: 50%;
-    border-radius: 10px;
-}
-
-.rsvp-step {
-    margin-bottom: 50px;
-}
-
-.rsvp-step div {
-    color: #e67e22;
-    border: 2px solid #e67e22;
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-    text-align: center;
-    padding: 5px;
-    float: left;
-    margin-right: 20px;
-    font-size: 150%;
-}
-
-.btn-app img {
-    height: 40px;
-}
-
-.btn-app:link,
-.btn-app:visited {
-    border-bottom: 1px solid transparent;
-}
-
-
-
-
-/* ------------------------ */
-/* Cities */
-/* ------------------------ */
-
-.city-feature {
     margin-bottom: 10px;
+    margin-left: 25%;
+}
+.section-rsvp span {
+    color: #da96ae;
+    font-weight: 400;
+}
+.couple {
+    width: 70%;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
 }
 
-.city-feature a {
-    -webkit-text-decoration: solid 3px green;
-            text-decoration: solid 3px green;
-}
 
-.icon-sm {
-    height: 20px;
-    display:inline-block;
-    width: 30px;
+/* ------------------------ */
+/* Registry */
+/* ------------------------ */
+
+.section-registry .row:last-child {
+    display: flex;
+    justify-content: space-between;
+}
+.section-registry .box {
+    width: 35%;
+}
+.section-registry a:link {
+    border-bottom: none;
+}
+.section-registry h3 {
+    font-weight: 400;
+}
+.section-registry img {
+    width: 80%;
+}
+.section-registry a {
+    margin-top: -20px;
+}
+.section-registry .col {
+    border: 2px solid #da96ae;
+    border-radius: 10px;
     text-align: center;
-    -webkit-filter: invert(60%) sepia(76%) saturate(2451%) hue-rotate(349deg) brightness(96%) contrast(88%);
-            filter: invert(60%) sepia(76%) saturate(2451%) hue-rotate(349deg) brightness(96%) contrast(88%);
-    margin-right: 10px;
 }
 
-.city-img {
+
+.registry-img {
     width: 100%;
     margin-bottom: 10px;
 }
 
-
-/* ------------------------ */
-/* Testimonials */
-/* ------------------------ */
-
-.section-testimonials {
-    background-image: linear-gradient(rgba(0,0,0, .7), rgba(0,0,0, .8)), url(./images/back-customers.jpg);
-    background-size: cover;
-    color: #fff;
-    background-attachment: fixed;
-    }
-
-blockquote {
-    font-style: italic;
-    font-size: 90%;
-    line-height: 130%;
-    padding: 1%;
-    position: relative;
-    margin-top: 40px;
-}
-
-.section-testimonials cite{
-    display: block;
-    margin-top: 30px;
-
-}
-
-.section-testimonials img {
-    margin-right: 15px;
-    border-radius: 50% 50%;
-    width: 20%;
-    border: 2px solid rgb(3, 107, 204);
-}
-
-blockquote:before {
-    content: "\201C";
-    font-size: 400%;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: -3px;
-}
-
-
-
-/* ------------------------ */
-/* Pricing */
-/* ------------------------ */
-
-.section-price {
-    background-color: rgb(240, 240, 240);
-}
-
-.plan-box {
-    background-color: #fff;
-    box-shadow: 0 2px 2px rgb(226, 225, 225);
-    width: 90%;
-    border-radius: 5px;
-    margin-left: 5%;
-}
-
-.plan-box div {
-    border-bottom:1px solid rgb(240, 240, 240);
-    padding: 15px;
-}
-
-.plan-box div:first-child {
-    background-color: rgb(250, 246, 246);
-}
-
-.plan-box div:last-child {
-    text-align: center;
-    border: none;
-}
-
-.plan-price { 
-    font-size: 250%;
-    font-weight: 100;
-    color: #e67e22
-}
-
-.plan-price span {
-    font-size: 30%;
-    color: #000;
-    font-weight: 300;
-}
-
-.plan-price-meal {
-    font-size: 80%;
-}
-
-.plan-box li {
-    line-height: 150%;
-    list-style: none;
-    font-size: 90%;
-}
-
-
-/* .plan-box a {
-    width: 60%;
-    margin-left: 20%;
-    text-align: center;
-    margin-top: 10px;
-} */
-
-
-.section-price button:hover {
-    background-color: #cf6d17;
-}
-
-.plan-box img {
-    height: 15px;
-    margin-right: 15px;
-    -webkit-filter: invert(60%) sepia(76%) saturate(2451%) hue-rotate(349deg) brightness(96%) contrast(88%);
-            filter: invert(60%) sepia(76%) saturate(2451%) hue-rotate(349deg) brightness(96%) contrast(88%);
-}
-
-/* h2::after {
-    display: block;
-    height: 2px;
-    background-color: #e67e22;
-    content: " ";
-    width: 100px;
-    margin: 0 auto;
-    margin-top: 30px;
-} */
 
 
 /* ------------------------ */
 /* Form */
 /* ------------------------ */
 
-.section-form {
-    width:50%;
-    margin: 0 auto;
-}
-
 input[type=text],
 input[type=email],
+input[type=phone],
 select,
 textarea {
     width: 100%;
     padding: 7px;
     border-radius: 3px;
     border: 1px solid #c7c6c6
+}
+
+.section-rsvp .col .span-1-of-3 {
+    text-align: right;
+}
+
+label {
+    margin-right: 10px;
 }
 
 textarea {
@@ -684,38 +541,7 @@ footer p {
     vertical-align: top;
 }
 
-.facebook,
-.twitter,
-.google,
-.instagram {
-    height: 25px;
-    width: auto;
-    -webkit-filter: invert(56%) sepia(3%) saturate(10%) hue-rotate(314deg) brightness(97%) contrast(93%);
-            filter: invert(56%) sepia(3%) saturate(10%) hue-rotate(314deg) brightness(97%) contrast(93%);
-    transition: -webkit-filter .2s;
-    transition: filter .2s;
-    transition: filter .2s, -webkit-filter .2s;
-}
 
-.facebook:hover{
-    -webkit-filter: invert(32%) sepia(15%) saturate(2142%) hue-rotate(183deg) brightness(97%) contrast(90%);
-            filter: invert(32%) sepia(15%) saturate(2142%) hue-rotate(183deg) brightness(97%) contrast(90%);
-}
-
-.twitter:hover{
-    -webkit-filter: invert(68%) sepia(97%) saturate(2202%) hue-rotate(179deg) brightness(96%) contrast(94%);
-            filter: invert(68%) sepia(97%) saturate(2202%) hue-rotate(179deg) brightness(96%) contrast(94%);
-}
-
-.google:hover {
-    -webkit-filter: invert(33%) sepia(87%) saturate(2816%) hue-rotate(346deg) brightness(96%) contrast(79%);
-            filter: invert(33%) sepia(87%) saturate(2816%) hue-rotate(346deg) brightness(96%) contrast(79%);
-}
-
-.instagram:hover {
-    -webkit-filter: invert(25%) sepia(87%) saturate(1782%) hue-rotate(294deg) brightness(87%) contrast(95%);
-            filter: invert(25%) sepia(87%) saturate(1782%) hue-rotate(294deg) brightness(87%) contrast(95%);
-}
 
 
 /* ------------------------ */
