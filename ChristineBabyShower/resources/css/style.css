@@ -341,7 +341,10 @@ nav p {
     text-transform: none;
 }
 
-
+.section-shower .couple {
+    height: 100%;
+    margin: 10px auto;
+}
 
 
 /* ------------------------ */
@@ -394,11 +397,29 @@ nav p {
     position: relative;
 }
 
+.section-rsvp a:link,
+.section-rsvp a:active,
+.section-rsvp a:visited {
+    color: #555555;
+    text-decoration: none;
+    border: none;
+}
+
 .date{
-    width: 50%;
+    width: 80%;
     margin-bottom: 10px;
     margin-left: 25%;
 }
+
+
+.address{
+    display: inline-block;
+}
+
+.address:last-child{
+    vertical-align: top;
+}
+
 .section-rsvp span {
     color: #da96ae;
     font-weight: 400;
@@ -415,7 +436,7 @@ nav p {
     height: 100%;
     width: 100%;
     position: absolute;
-    top:0%;
+    top: 0%;
     text-align: center;
     display: none;
 }
