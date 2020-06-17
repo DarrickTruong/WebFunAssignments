@@ -178,4 +178,7 @@
     .hero-text-box .btn {
         width: 100%
     }
+    .section-rose {
+        display: none;
+    }
 }
