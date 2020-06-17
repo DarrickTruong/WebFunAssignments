@@ -128,10 +128,10 @@ $(document).ready(function () {
       data: $form.serialize(),
       success: function() {
       // do something
-      console.log("you have successfully rsvp'd!")
+      alert("Congrats, you have successfully rsvp'd!")
       }
     })
   });
 
-  
+
 });

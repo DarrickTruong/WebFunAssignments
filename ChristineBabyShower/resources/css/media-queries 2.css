@@ -1,0 +1,143 @@
+/* big tablets to 1200px (widths smaller than the 1140px row */
+@media only screen and (max-width: 1350px) {
+    .hero-text-box {
+        width: 50%;
+        padding: 5%;
+        position: absolute;
+        top: 50%;
+        left: 30%;
+    }
+
+    .row {
+        padding: 0 2%;
+    }
+}
+
+/* small tablets to big tablets 768-1023px */
+@media only screen and (max-width: 1023px) {
+    body {
+        font-size: 18px;
+    }
+
+    .hero-text-box {
+        padding: 5%;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+    }
+
+    section {
+        padding: 30px;
+    }
+
+    .main-nav li {
+        margin-left: 20px;
+    }
+
+    h3 {
+        font-size: 95%;
+    }
+
+    .long-copy {
+        width: 80%;
+        margin-left: 10%
+    }
+
+    .rsvp-box:first-child p {
+        margin-left: 10%;
+        width: 70%;
+    }
+
+}
+
+
+/* small phones to small tablets 481-767px */
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+    .main-nav {
+        float:left;
+        margin: 10px 0 0 10px;
+        display: none;
+    }
+
+    .main-nav li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .main-nav a {
+        border:0;
+    }
+
+    .sticky .logo-black {
+        margin-top: 15px;
+    }
+
+    .sticky .main-nav {
+        margin-top: 10px;
+    }
+
+    .sticky .main-nav li a:link, 
+    .sticky .main-nav li a:visited {
+        padding: 10px 0 0 ;
+        color: #555555;
+        border:0;
+    }
+
+    .mobile-nav-icon {
+        display: inline-block;
+    }
+
+    .sticky .mobile-nav-icon img {
+        filter: none;
+    }
+    .sticky .close-nav-icon img {
+        filter: none;
+    }
+
+    h1 {
+        font-size: 175%;
+    }
+
+    h2 {
+        font-size: 125%;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .long-copy {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    input,
+    select {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .section-rsvp {
+        height: 100vh;
+    }
+    .rsvp-box {
+        margin-bottom: 35px;
+    }
+
+    .rsvp-box:last-child {
+        margin-bottom: 0;
+    }
+    
+    .section-rsvp .col .span-1-of-3 {
+        text-align: left;
+    }
+}

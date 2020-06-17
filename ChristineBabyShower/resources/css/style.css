@@ -380,11 +380,12 @@ nav p {
 
 
 /* ------------------------ */
-/* rsvp */
+/* RSVP */
 /* ------------------------ */
 
 .section-rsvp {
     background-color: rgb(240, 240, 240);
+    position: relative;
 }
 
 .section-rsvp p{
@@ -403,6 +404,18 @@ nav p {
     margin: 0 auto;
 }
 
+.rsvp-confirm {
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #da96ae;
+    padding: 10px;
+    width: 50px;
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    
+}
 
 /* ------------------------ */
 /* Registry */
@@ -432,7 +445,6 @@ nav p {
     border-radius: 10px;
     text-align: center;
 }
-
 
 .registry-img {
     width: 100%;
