@@ -127,9 +127,8 @@
     /* background image and adding a dark tint for text */
         background-image: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.699)), url(./images/hero-mobile.jpg);
         background-size: cover;
-        background-position: right; 
+        background-position: center; 
         height: 100vh;
-        background-attachment: fixed;
     }
 
     .rsvp-box {
