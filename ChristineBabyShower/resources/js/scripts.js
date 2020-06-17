@@ -128,7 +128,10 @@ $(document).ready(function () {
       data: $form.serialize(),
       success: function() {
       // do something
-      alert("Congrats, you have successfully rsvp'd!")
+      console.log('success');
+      $('.rsvp-confirm').fadeIn(1000);
+      $('.rsvp-confirm').delay(2500).fadeOut(1000);
+
       }
     })
   });

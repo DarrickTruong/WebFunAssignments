@@ -140,4 +140,13 @@
     .section-rsvp .col .span-1-of-3 {
         text-align: left;
     }
+
+    .rsvp-confirm {
+        padding: 15px;
+        height: 100vh;
+        left: 0%;
+    }
+    .rsvp-confirm p {
+        margin-top: 60%;
+    }
 }
