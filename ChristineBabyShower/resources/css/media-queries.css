@@ -123,6 +123,15 @@
 
 @media only screen and (max-width:500px) {
 
+    header {
+    /* background image and adding a dark tint for text */
+        background-image: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.699)), url(./images/hero-mobile.jpg);
+        background-size: cover;
+        background-position: right; 
+        height: 100vh;
+        background-attachment: fixed;
+    }
+
     .rsvp-box {
         margin-bottom: 35px;
     }
@@ -164,5 +173,9 @@
     }
     .rsvp-box form {
         order:2;
+    }
+
+    .hero-text-box .btn {
+        width: 100%
     }
 }
