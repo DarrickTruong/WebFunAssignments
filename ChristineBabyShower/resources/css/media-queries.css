@@ -122,15 +122,12 @@
 }
 
 @media only screen and (max-width:500px) {
-
-    header {
-    /* background image and adding a dark tint for text */
-        background-image: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.699)), url(./images/hero-mobile.jpg);
-        background-size: cover;
-        background-position: center; 
-        height: 100vh;
+    .head-mobile {
+        display: block;
     }
-
+    .head-pc {
+        display: none;
+    }
     .hero-text-box {
         width: 55%;
         text-align: center;
@@ -138,7 +135,6 @@
     .hero-text-box h1 {
         text-align: left;
     }
-
     .rsvp-box {
         margin-bottom: 35px;
     }
