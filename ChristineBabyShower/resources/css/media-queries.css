@@ -131,6 +131,14 @@
         height: 100vh;
     }
 
+    .hero-text-box {
+        width: 55%;
+        text-align: center;
+    }
+    .hero-text-box h1 {
+        text-align: left;
+    }
+
     .rsvp-box {
         margin-bottom: 35px;
     }
@@ -149,7 +157,7 @@
         left: 0%;
     }
     .rsvp-confirm p {
-        margin-top: 60%;
+        margin-top: 80%;
     }
 
     .date {
@@ -174,9 +182,6 @@
         order:2;
     }
 
-    .hero-text-box .btn {
-        width: 100%
-    }
     .section-rose {
         display: none;
     }
