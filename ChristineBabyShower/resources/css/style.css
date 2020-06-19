@@ -183,6 +183,7 @@ input[type=submit]:active {
     height: 100vh;
     background-attachment: fixed;
     display: none;
+    z-index: -1;
 }
 
 .head-pc {
@@ -192,6 +193,8 @@ input[type=submit]:active {
     height: 100vh;
     background-attachment: fixed;
     display: block;
+    z-index: -1;
+
 }
 
 /* Centering Text-box inside a div background picture */
@@ -244,10 +247,19 @@ nav p {
 /* Main-Nav */
 /* ------------------------ */
 
+nav .row {
+    position: absolute;
+    top:0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .main-nav {
-    float: right;
+    /* float: right; */
     list-style: none;
     margin-top: 50px;
+    margin-left: auto
 }
 
 .main-nav li {
@@ -275,6 +287,12 @@ nav p {
     height: 50px;
     width: auto;
     margin-bottom: 15px;
+}
+.icon-lg:first-child {
+    margin-right: auto;
+}
+.icon-lg:last-child {
+    margin-left: auto;
 }
 
 
