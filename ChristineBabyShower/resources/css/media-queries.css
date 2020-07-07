@@ -122,11 +122,13 @@
 }
 
 @media only screen and (max-width:500px) {
-    .head-mobile {
-        display: block;
-    }
-    .head-pc {
-        display: none;
+
+    header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.699)), url(./images/mobile.jpg);
+        background-size: cover;
+        background-position: center; 
+        height: 100vh;
+        background-attachment: fixed;
     }
     .hero-text-box {
         width: 55%;
