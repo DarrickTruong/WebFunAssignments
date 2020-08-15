@@ -175,26 +175,12 @@ input[type=submit]:active {
 /* Headings */
 /* ------------------------ */
 
-.head-mobile {
-    /* background image and adding a dark tint for text */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.699)), url(./images/hero-mobile.jpg);
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.699)), url(./images/hero.jpg);
     background-size: cover;
     background-position: center; 
     height: 100vh;
     background-attachment: fixed;
-    display: none;
-    z-index: -1;
-}
-
-.head-pc {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.699)), url(./images/hero.jpg);
-    background-size: cover;
-    background-position: right; 
-    height: 100vh;
-    background-attachment: fixed;
-    display: block;
-    z-index: -1;
-
 }
 
 /* Centering Text-box inside a div background picture */
@@ -240,26 +226,39 @@ nav p {
     margin: 5px 0;
 }
 
+.iframe {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    display:none;
+}
+.exit {
+    border-radius: 50%;
+    padding: 0 5px;
+    position: relative;
+    float: left;
+    margin: 10px;
+    cursor: pointer;
+    border: 1px solid black;
+    color: black;
+    background-color: #b3b1b1;
+}
 
+.close {
+    display: none;
+    vertical-align: top;
+    margin-top: 10px;
+}
 
 
 /* ------------------------ */
 /* Main-Nav */
 /* ------------------------ */
 
-nav .row {
-    position: absolute;
-    top:0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
 .main-nav {
-    /* float: right; */
+    float: right;
     list-style: none;
     margin-top: 50px;
-    margin-left: auto
 }
 
 .main-nav li {
@@ -288,13 +287,6 @@ nav .row {
     width: auto;
     margin-bottom: 15px;
 }
-.icon-lg:first-child {
-    margin-right: auto;
-}
-.icon-lg:last-child {
-    margin-left: auto;
-}
-
 
 /* ------------------------ */
 /* Sticky-Nav */
@@ -423,6 +415,7 @@ nav .row {
 .section-rsvp {
     background-color: rgb(240, 240, 240);
     position: relative;
+    display: none;
 }
 
 .section-rsvp a:link,
@@ -448,7 +441,8 @@ nav .row {
     vertical-align: top;
 }
 
-.section-rsvp span {
+.section-rsvp span,
+.section-survey span {
     color: #da96ae;
     font-weight: 400;
 }
@@ -535,6 +529,17 @@ nav .row {
     margin-bottom: 10px;
 }
 
+/* Survey */
+.section-survey {
+    background-color: #e4e4e4;
+}
+.section-survey iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+
+
 
 
 /* ------------------------ */
@@ -544,6 +549,7 @@ nav .row {
 input[type=text],
 input[type=email],
 input[type=phone],
+input[type=date],
 select,
 textarea {
     width: 100%;
@@ -575,6 +581,9 @@ select {
 *:focus {
     outline:none;
 }
+
+
+
 
 /* ------------------------ */
 /* Footer */

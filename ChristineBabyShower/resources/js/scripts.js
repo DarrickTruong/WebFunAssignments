@@ -20,6 +20,12 @@ $(document).ready(function () {
       1000
     );
   });
+  $(".js--scroll-registry").click(function () {
+    $("html,body").animate(
+      { scrollTop: $(".js--section-registry").offset().top },
+      1000
+    );
+  });
 
   /* Smooth Scroll on nav click (from css-tricks) */
 
@@ -81,7 +87,7 @@ $(document).ready(function () {
       $(".js--wp-2").addClass("animated fadeIn");
     },
     {
-      offset: "55%",
+      offset: "70%",
     }
   );
   $(".js--wp-3").waypoint(
@@ -114,7 +120,7 @@ $(document).ready(function () {
     icon.attr("data-alt-src", temp);
   });
 
-  var $form = $('form#rsvp-form'),
+  var $form1 = $("form#rsvp-form"),
     url =
       "https://script.google.com/macros/s/AKfycbxaxjKgLF03sGcaP8LXEiELELHeZCHC82Sfs8LkeoXdrZ6cpMUJ/exec";
 
@@ -125,16 +131,91 @@ $(document).ready(function () {
       url: url,
       method: "GET",
       dataType: "json",
-      data: $form.serialize(),
-      success: function() {
-      // do something
-      console.log('success');
-      $('.rsvp-confirm').fadeIn(1000);
-      $('.rsvp-confirm').delay(2500).fadeOut(1000);
-
-      }
-    })
+      data: $form1.serialize(),
+      success: function () {
+        // do something
+        console.log(url);
+        $(".rsvp-confirm").fadeIn(1000);
+        $(".rsvp-confirm").delay(2500).fadeOut(1000);
+      },
+    });
   });
 
+  var $form2 = $("form#survey-form"),
+    url =
+      "https://script.google.com/macros/s/AKfycbw5bu0ahOgRMDZTs_MQMxpXF3hD61Zw_eqyrik8J3iUmqxlfqQ/exec";
 
+  $("#submit-survey").on("click", function (e) {
+    console.log("survey submitted");
+    e.preventDefault();
+    var jqxhr = $.ajax({
+      url: url,
+      method: "GET",
+      dataType: "json",
+      data: $form2.serialize(),
+      success: function () {
+        // do something
+        console.log("survey success");
+      },
+    });
+  });
+
+  // Youtube API
+  // 2. This code loads the IFrame Player API code asynchronously.
+  var tag = document.createElement("script");
+
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName("script")[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  // 3. This function creates an <iframe> (and YouTube player)
+  //    after the API code downloads.
+  var player;
+  var loaded;
+  function onYouTubeIframeAPIReady() {
+    loaded = true;
+    player = new YT.Player("player", {
+      height: "390",
+      width: "640",
+      videoId: "h0_FjopMtJQ",
+      playerVars: {
+        autoplay: 0,
+      },
+    });
+  }
+
+  // 4. The API will call this function when the video player is ready.
+  function onPlayerReady(event) {
+    event.target.playVideo();
+  }
+
+  // 5. The API calls this function when the player's state changes.
+  //    The function indicates that when playing a video (state=1),
+  //    the player should play for six seconds and then stop.
+  var done = false;
+  function onPlayerStateChange(event) {
+    if (event.data == YT.PlayerState.PLAYING && !done) {
+      setTimeout(stopVideo, 6000);
+      done = true;
+    }
+  }
+  var stopped;
+  function stopVideo() {
+    stopped = true;
+    player.stopVideo();
+  }
+
+  $(".play").on("click", function () {
+    console.log("clicked");
+    if (!loaded) {
+      onYouTubeIframeAPIReady();
+    }
+    $(".iframe").fadeIn();
+  });
+
+  $(".exit").on("click", function () {
+    console.log("exit");
+    stopVideo();
+    $(".iframe").fadeOut();
+  });
 });
